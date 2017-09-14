@@ -1,4 +1,6 @@
+import { Student } from './student/student.model';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'jod-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'jod';
+
+  students: Student[] = [
+  {name: 'Luke', isJedi: true, temple: 'Coruscant'},
+  {name: 'Leia', isJedi: false},
+  {name: 'Han Solo', isJedi: false}
+  ]
 }
